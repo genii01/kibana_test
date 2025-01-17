@@ -113,6 +113,7 @@ curl http://localhost:9200
 ### Stop and Remove Containers
 ```bash
 docker-compose down --rmi all
+docker-compose down -v
 docker system prune -a
 ```
 

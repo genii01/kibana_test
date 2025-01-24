@@ -157,3 +157,30 @@ log.level: WARNING or log.level: ERROR
    - Enter `fastapi-logs-*` as the index pattern.
 4. **Confirm Configuration**:
    - Verify that the data view matches the expected indices and save it.
+
+## Accessing Dashboards
+
+### Elasticsearch Dashboard
+```bash
+http://localhost:9200
+```
+
+### Kibana Dashboard
+```bash
+http://localhost:5601
+```
+
+### Elasticsearch API Endpoints
+```bash
+# Cluster Health
+http://localhost:9200/_cluster/health
+
+# Indices List
+http://localhost:9200/_cat/indices
+
+# Search All Documents
+http://localhost:9200/_search
+
+# Specific Index Search
+http://localhost:9200/fastapi-logs/_search
+```
